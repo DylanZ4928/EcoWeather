@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+#background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* Background for text */
+.weather,
+.admin,
+.animalDialogue {
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.eventDialogue {
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255, 0.5);
+  width: 20%;
+  padding: 10px;
+}
+
+.weather {
+  position: fixed;
+  width: 10%;
+  left: 27%;
+  top: 68%;
+  text-align: center;
+}
+
+.admin {
+  padding: 50px;
+
+  font-weight: bold;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.admin button {
+  background-color: #63cf80;
+  border-radius: 42px;
+  border: 4px solid #0c8218;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  text-shadow: 1px 0px 16px #246b19;
+}
+
+.admin button:hover {
+  background-color: #6cf0c2;
+}
+
+.admin button:active {
+  position: relative;
+  top: 1px;
+}
+
+#back-button {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  background-color: #63cf80;
+  border-radius: 42px;
+  border: 4px solid #0c8218;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  text-shadow: 1px 0px 16px #246b19;
+}
+
+input[type="submit"]:hover {
+  background: #6cf0c2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input-container,
+.admin-creation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+/*
+.AdminLogin button {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.AdminLogin button:hover {
+  background: #6cf0c2;
+}
+*/
+
+/* Animal CSS */
+
+.animalDialogue {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 10px;
+  margin: auto;
+  width: 30%;
+  max-height: 80%;
+  border-style: ridge;
+  text-align: center;
+}
+
+.animalDialogue img {
+  display: block;
+  margin: auto;
+  max-width: 50%;
+}
+
+@keyframes birdFlyAnimation {
+  from {
+    left: -80%;
+  }
+  to {
+    left: 80%;
+  }
+}
+
+#butterfly-box {
+  position: fixed;
+  left: 15%;
+  top: 15%;
+  width: 100%;
+  height: 100vh;
+}
+
+.butterflyImg {
+  position: fixed;
+  left: 5%;
+  top: 5%;
+  width: 10%;
+}
+
+.eventDisplay {
+  text-align: center;
+}
+
+.bird {
+  position: fixed;
+  left: 80%;
+  top: 20%;
+  width: 10%;
+  animation: birdFlyAnimation 8s ease-out 0s 1 normal;
+}
+
+@keyframes kangarooHopAnimation {
+  from {
+    left: 140%;
+  }
+  to {
+    left: 60%;
+  }
+}
+
+.kangaroo {
+  position: fixed;
+  left: 60%;
+  top: 65%;
+  width: 12%;
+  animation: kangarooHopAnimation 5s ease-out 0s 1 normal;
+}
+
+/* Table Formatting */
+table.eventTable {
+  font-family: Georgia, serif;
+  border: 6px solid #24943a;
+  background-color: #d4eed1;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+table.eventTable td,
+table.eventTable th {
+  border: 1px solid #24943a;
+  padding: 3px 2px;
+}
+table.eventTable tbody td {
+  font-size: 13px;
+}
+table.eventTable td:nth-child(even) {
+  background: #d0e4f5;
+}
+table.eventTable thead {
+  background: #24943a;
+  background: -moz-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #24943a 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #5baf6b 0%,
+    #3a9e4d 66%,
+    #24943a 100%
+  );
+  background: linear-gradient(to bottom, #5baf6b 0%, #3a9e4d 66%, #24943a 100%);
+  border-bottom: 0px solid #444444;
+}
+table.eventTable thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #f0f0f0;
+  text-align: center;
+  border-left: 2px solid #24943a;
+}
+table.eventTable thead th:first-child {
+  border-left: none;
+}
+
+table.eventTable tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #f0f0f0;
+  background: #24943a;
+  background: -moz-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #24943a 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #5baf6b 0%,
+    #3a9e4d 66%,
+    #24943a 100%
+  );
+  background: linear-gradient(to bottom, #5baf6b 0%, #3a9e4d 66%, #24943a 100%);
+  border-top: 1px solid #24943a;
+}
+table.eventTable tfoot td {
+  font-size: 13px;
+}
+table.eventTable tfoot .links {
+  text-align: right;
+}
+table.eventTable tfoot .links a {
+  display: inline-block;
+  background: #ffffff;
+  color: #24943a;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+/* Individual Page Formatting */
+.userNameInput {
+  text-align: center;
+}
+
+.userNameTextBox {
+  width: 250px;
+  padding: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.adminHome {
+  display: inline-block;
+  text-align: center;
+  /*the same margin which is every button have, it is for small screen, and if you have many buttons.*/
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.adminLoginForm {
+  width: 200px;
+  padding: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.newAdmin,
+.changeLocation,
+.adminLogin,
+.locationChangeSuccess,
+.newEventSuccess {
+  display: inline-block;
+  text-align: center;
+  /*the same margin which is every button have, it is for small screen, and if you have many buttons.*/
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.locationChangeButton,
+.eventSuccessButton {
+  margin-top: 25px;
+}
